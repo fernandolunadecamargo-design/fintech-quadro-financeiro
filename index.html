@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fintech - Quadro Financeiro Mensal</title>
+
+    <link rel="stylesheet" href="./css/tailwind.css">    
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body class="bg-white">
+
+    <div class="flex flex-col md:flex-row min-h-screen">
+
+        <aside class="w-full md:w-64 bg-purple-500 menu-lateral text-white p-6">
+            <h1 class="text-3xl mb-10">
+                FINTECH
+            </h1>
+
+            <nav>
+                <ul>
+                    <li class="bg-purple-300 menu-ativo p-3 mb-4 font-bold rounded text-sm">
+                        QUADRO FINANCEIRO MENSAL
+                    </li>
+
+                    <li class="mb-6 p-2 rounded cursor-pointer text-sm hover:bg-purple-300 hover:text-white hover:font-bold hover:uppercase hover:p-4 transition">
+                        Despesas
+                    </li>
+
+                    <li class="mb-6 p-2 rounded cursor-pointer text-sm hover:bg-purple-300 hover:text-white hover:font-bold hover:uppercase hover:p-4 transition">
+                        Categorias
+                    </li>
+
+                    <li class="mb-6 p-2 rounded cursor-pointer text-sm hover:bg-purple-300 hover:text-white hover:font-bold hover:uppercase hover:p-4 transition">
+                        Relatórios
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="flex-1 p-6 md:p-12">
+
+            <div class="max-w-4xl">
+
+                <section class="flex flex-col md:flex-row justify-between items-start gap-4">
+
+                    <div>
+                        <h2 class="text-xl font-bold">
+                            QUADRO FINANCEIRO MENSAL
+                        </h2>
+
+                        <p class="mt-3 font-bold">
+                            RESUMO DAS RECEITAS, DESPESAS E SALDO EM CONTA
+                        </p>
+                    </div>
+
+                    <div class="bg-gray-700 text-white font-bold px-4 py-3 rounded">
+                        <label for="mes" class="mr-2">
+                            MÊS:
+                        </label>
+
+                        <select id="mes" name="mes" class="bg-gray-700 text-white font-bold outline-none cursor-pointer">
+                            <option value="abril">Abril</option>
+                            <option value="maio">Maio</option>
+                            <option value="junho">Junho</option>
+                            <option value="julho">Julho</option>
+                        </select>
+                    </div>
+
+                </section>
+
+                <section class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-12 max-w-4xl">
+
+                    <div>
+                        <h3 class="font-bold mb-3">
+                            Saldo em Conta
+                        </h3>
+
+                        <div class="bg-gray-300 rounded-lg p-6 text-center">
+                            <p class="text-3xl font-bold">
+                                R$ 5.250
+                            </p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 class="font-bold mb-3">
+                            Receitas do Mês
+                        </h3>
+
+                        <div class="bg-gray-300 rounded-lg p-6 text-center">
+                            <p class="text-2xl font-bold">
+                                R$ 8.000
+                            </p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 class="font-bold mb-3">
+                            Despesas do Mês
+                        </h3>
+
+                        <div class="bg-gray-300 rounded-lg p-6 text-center">
+                            <p class="text-2xl font-bold">
+                                R$ 2.750
+                            </p>
+                        </div>
+                    </div>
+
+                </section>
+
+                <section class="mt-16 max-w-4xl">
+
+                    <h3 class="text-xl font-bold mb-4">
+                        Transações
+                    </h3>
+
+                    <p class="text-xs mb-3 text-gray-700 md:hidden">
+                        Arraste a tabela para o lado para ver todas as colunas.
+                    </p>
+
+                    <div class="bg-gray-300 rounded-lg p-4 h-56 overflow-x-scroll md:overflow-x-visible">
+                        
+                        <table class="w-full min-w-[380px] md:min-w-0 text-xs md:text-sm">
+                            <thead>                
+                                <tr>
+                                    <th class="bg-gray-600 text-white p-2">
+                                        Valor
+                                    </th>
+
+                                    <th class="bg-gray-600 text-white p-2">
+                                        Categoria
+                                    </th>
+
+                                    <th class="bg-gray-600 text-white p-2">
+                                        Data
+                                    </th>
+
+                                    <th class="bg-gray-600 text-white p-2">
+                                        Descrição
+                                    </th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td class="bg-white p-2 text-center">
+                                        -320
+                                    </td>
+
+                                    <td class="bg-white p-2 text-center">
+                                        Alimentação
+                                    </td>
+
+                                    <td class="bg-white p-2 text-center">
+                                        30/04
+                                    </td>
+
+                                    <td class="bg-white p-2 text-center">
+                                        Mercado
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="bg-white p-2 text-center">
+                                        +5000
+                                    </td>
+
+                                    <td class="bg-white p-2 text-center">
+                                        Salário
+                                    </td>
+
+                                    <td class="bg-white p-2 text-center">
+                                        22/04
+                                    </td>
+
+                                    <td class="bg-white p-2 text-center">
+                                        Adiantamento
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="bg-white p-2 text-center">
+                                        -30
+                                    </td>
+
+                                    <td class="bg-white p-2 text-center">
+                                        Transporte
+                                    </td>
+
+                                    <td class="bg-white p-2 text-center">
+                                        23/04
+                                    </td>
+
+                                    <td class="bg-white p-2 text-center">
+                                        Uber
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+
+                </section>
+
+            </div>
+
+        </main>
+
+    </div>
+
+</body>
+</html>
