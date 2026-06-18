@@ -224,8 +224,8 @@
   .max-w-4xl {
     max-width: var(--container-4xl);
   }
-  .min-w-\[380px\] {
-    min-width: 380px;
+  .min-w-96 {
+    min-width: calc(var(--spacing) * 96);
   }
   .flex-1 {
     flex: 1;
@@ -420,6 +420,24 @@
       line-height: var(--tw-leading, var(--text-sm--line-height));
     }
   }
+}
+:root {
+  --cor-roxa: #b65ad8;
+  --cor-roxa-clara: #d58df0;
+  --cor-preta: #111111;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--cor-preta);
+}
+.menu-lateral {
+  background-color: var(--cor-roxa);
+}
+.menu-ativo {
+  background-color: var(--cor-roxa-clara);
 }
 @property --tw-font-weight {
   syntax: "*";
